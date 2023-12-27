@@ -23,7 +23,7 @@ def get_filters():
     city_data={'chicago','newyorkcity','washington'}
     month_data={'all','january','februray','march','april','may','june','july','october','september','november','december'}
     day_data={'all','1','2','3','4','5','6','7'}
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Welcome! Let\'s explore some US bikeshare data!')
 
     print("Would you like to see data for Chicago, New York City, or Washington?")
     city=input()
@@ -34,7 +34,7 @@ def get_filters():
         city=input()
         city=city.lower()
 
-    print("Which month? January, Februray, March, April, May or June?")
+    print("Which month? January, Februray, March, April, May or June?, you can also write 'all'")
     month=input()
     month=month.lower()
     while(month not in month_data):
@@ -42,7 +42,7 @@ def get_filters():
         month=input()
         month=month.lower()
 
-    print("Which day? Please type your response as an integer(e.g., 1=Sunday)")
+    print("Which day? Please type your response as an integer(e.g., 1=Sunday), you can also write 'all'")
     day=input()
     day=day.lower()
     while(day not in day_data):
